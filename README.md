@@ -1,6 +1,6 @@
 # ToDo-App-in-Django
 
-A Todo List using [Django](https://www.djangoproject.com/)
+A ToDo List using [Django](https://www.djangoproject.com/)
 
 # Code
 
