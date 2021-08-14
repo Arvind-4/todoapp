@@ -18,6 +18,7 @@ source venv/scripts/activate
 mkdir src
 cd src
 git clone https://github.com/Arvind-4/ToDo-App-in-Django.git .
+pip install -r requirements.txt
 ```
 
 ### Step 3: Run the Code!
