@@ -5,3 +5,4 @@ lib64
 include/
 __pycache__/
 db.sqlite3
+staticfiles_build/
