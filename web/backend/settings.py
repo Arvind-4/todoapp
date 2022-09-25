@@ -141,10 +141,10 @@ LOGIN_URL = 'sign-in'
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    BASE_DIR / 'static'
+    BASE_DIR / 'static' # noqa
 ]
 
-STATIC_ROOT = BASE_DIR.parent / 'staticfiles_build' / 'static'
+STATIC_ROOT = BASE_DIR.parent / 'staticfiles_build' / 'static' # noqa
 
 # WHITENOISE_USE_FINDERS = True
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
