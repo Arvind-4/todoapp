@@ -139,15 +139,12 @@ LOGIN_URL = 'sign-in'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_PATH = BASE_DIR.parent
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    STATIC_PATH / 'static'
+    BASE_DIR / 'static'
 ]
 
-STATIC_ROOT = STATIC_PATH.parent / 'staticfiles_build' / 'static'
-print("STATICFILES_DIRS: ", STATICFILES_DIRS)
-print('STATIC_ROOT:', STATIC_ROOT)
+STATIC_ROOT = BASE_DIR.parent / 'staticfiles_build' / 'static'
 
 # WHITENOISE_USE_FINDERS = True
 # STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

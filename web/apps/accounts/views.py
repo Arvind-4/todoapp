@@ -27,6 +27,7 @@ class SignUpPage(View):
             password = form.cleaned_data.get('password2')
             user = User.objects.create(username=username)
             user.set_password(password)
+            user.save()
             return redirect('sign-in')
         return render(request, self.template_name, {'form': form})
 
