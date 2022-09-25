@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #body {
+            min-height: 100vh;
+        }
+    </style>
     {% include 'css/index.html' %}
     {% include 'js/index.html' %}
     <title>{% block title %} {% endblock %}</title>
-
-    <style>
-        body {
-    min-height: 100vh;
-}
-    </style>
 </head>
 
-<body style="min-height: 100vh;">
+<body id="body">
     {% include 'components/header.html' %}
         {% block content %}
         {% endblock %}
+    {% include 'components/footer.html' %}
 </body>
 </html>
