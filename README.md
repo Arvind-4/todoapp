@@ -1,62 +1,64 @@
-# ToDo-App-in-Django
+# Todo app
 
-A ToDo List using [Django](https://www.djangoproject.com/)
+A Todo app in [Django](https://www.djangoproject.com/)
 
-Check the [Website](https://to-do-app-in-django-y6zn.vercel.app/) deployed Using Vercel.
+Check the [Website](https://awesometodoapp.vercel.app) deployed Using Vercel.
 
-# Code
+## Get the code
 
-### Step 1: Create Virtual Environment
-#### For Linux/Mac
+- Step 1: Create Virtual Environment
+
 ```bash
-cd /path/to/folder
-mkdir todo
-cd todo
+cd ~/Dev
+mkdir ~/Dev/todoapp -p
+cd ~/Dev/todoapp
+python3.9 -m pip install virtualenv
 python3.9 -m virtualenv .
-```
-#### For Windows
-```bash
-cd /path/to/folder
-mkdir todo
-cd todo
-python -m virtualenv .
+source bin/activate
 ```
 
-### Step 2: Install the Dependencies
-#### With **pip**
+- Step 2: Install the Dependencies
+
+Using **pip**
+
 ```bash
-git clone https://github.com/Arvind-4/ToDo-App-in-Django.git .
-pip install -r requirements.txt
+git clone https://github.com/Arvind-4/todoapp.git .
+pip install -r requirements.txt -r requirements-dev.txt
 ```
-#### With **poetry**
+
+Using **poetry**
+
 ```bash
-git clone https://github.com/Arvind-4/ToDo-App-in-Django.git .
+git clone https://github.com/Arvind-4/todoapp.git .
 poetry install
 ```
 
-### Step 3: Run the Migrations!
-```
-python web/manage.py migrate
-python web/manage.py createsuperuser
+- Step 3: Run the Migrations!
+
+```bash
+python manage.py makemigrations
+python manage.py migrate
 ```
 
-### Step 4: Run the Code!
-```
-python web/manage.py runserver
+- Step 4: Run the Code!
+
+```bash
+python manage.py runserver
 ```
 
 ## Add These to your .env in Root of the Project
+
 ```bash
-DATABASE_NAME=
-DATABASE_USER=
-DATABASE_PASSWORD=
-DATABASE_HOST=
 DATABASE_PORT=
+DATABASE_HOST=
+DATABASE_PASSWORD=
+DATABASE_USER=
+DATABASE_NAME=
+DATABASE_CLUSTER=
 
-DJANGO_SECRET_KEY=
-DJANGO_DEBUG=1
-
-DJANGO_SUPERUSER_EMAIL=
-DJANGO_SUPERUSER_USERNAME=
 DJANGO_SUPERUSER_PASSWORD=
+DJANGO_SUPERUSER_USERNAME=
+DJANGO_SUPERUSER_EMAIL=
+DJANGO_DEBUG=
+DJANGO_SECRET_KEY=
 ```
