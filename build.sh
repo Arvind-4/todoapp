@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "Building Tailwind CSS..."
+pnpm install 
+pnpm build
+
 echo "Installing dependencies..."
 
 python3.9 -m pip install -r requirements.txt

@@ -1,0 +1,30 @@
+{
+  "name": "todoapp",
+  "version": "1.0.0",
+  "description": "tailwindcss for todoapp",
+  "scripts": {
+    "watch": "tailwindcss -i ./static/css/input/styles.css -o ./static/css/dist/styles.css --watch",
+    "build": "rimraf ./static/css/dist/styles.css  && cross-env NODE_ENV=production tailwindcss -i ./static/css/input/styles.css -o ./static/css/dist/styles.css"
+  },
+  "keywords": [
+    "tailwindcss",
+    "todoapp",
+    "css"
+  ],
+  "author": {
+    "name": "Arvind A",
+    "email": "pingarvindforquestions@gmail.com",
+    "url": "https://arvind11.vercel.app",
+    "github": "https://github.com/Arvind-4"
+  },
+  "license": "MIT LICENSE",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cross-env": "^7.0.3",
+    "cssnano": "^7.0.4",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^3.4.7"
+  }
+}

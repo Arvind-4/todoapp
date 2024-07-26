@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 {% load static %}
 <html>
-
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        #body {
-            min-height: 100vh;
-        }
+      #body {
+        min-height: 100vh;
+      }
     </style>
     {% include 'css/index.html' %}
     {% include 'js/index.html' %}
-    <title>{% block title %} {% endblock %}</title>
-</head>
-
-<body id="body">
+    <title>
+      {% block title %}{% endblock %}
+    </title>
+  </head>
+  <body id="body">
     {% include 'components/header.html' %}
-        {% block content %}
-        {% endblock %}
+    {% block content %}{% endblock %}
     {% include 'components/footer.html' %}
-</body>
+  </body>
 </html>
